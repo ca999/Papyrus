@@ -190,7 +190,7 @@ class TextEditor:
             messagebox.showerror("Exception", e)
 
     def infoabout(self):
-        messagebox.showinfo("Welcome","Welcome! Papyrus is a simple notepad which makes copying and pasting easier than it already is.\n Whatever you paste into papyrus, is available immediately in the papyrus canvas\n To copy from the canvas click on the text in the canvas\n To remove from the canvas double-click on the text.\n ")
+        messagebox.showinfo("Welcome","Welcome! Papyrus is a simple notepad which makes copying and pasting easier than it already is.\nWhatever you paste into papyrus, is available immediately in the papyrus canvas\nTo copy from the canvas click on the text in the canvas\nTo remove from the canvas double-click on the text.\n ")
 
     def shortcuts(self):
         self.txt.bind("<Control-n>", self.newfile)
@@ -201,7 +201,7 @@ class TextEditor:
         self.txt.bind("<Control-x>", self.cut)
         self.txt.bind("<Control-c>", self.copy)
         self.txt.bind("<Control-v>", self.paste)
-        self.txt.bind("<Control-u>", self.undo)
+        self.txt.bind("<Control-z>", self.undo)
 
 
 root = Tk()
